@@ -1,0 +1,17 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  TYPOGRAPHY  */
+.nav-menu ul{
+    margin: 0;
+    list-style-type: none;
+    background-color: pink;
+    text-transform: uppercase;
+}
+
+footer p {
+    text-transform: capitalize;
+}
