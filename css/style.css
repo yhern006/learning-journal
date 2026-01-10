@@ -28,16 +28,13 @@ main {
     font-style: normal;
 }
 
-article:first-child {
-    padding: 14px;
-}
-
-/* article:not(:first-child){
-    margin: 14px;
-} */
-
 article img {
     width: 100%;
+    border-radius: 3px;
+}
+
+main article {
+    margin-bottom: 2.5em;
 }
 
 footer {
@@ -126,17 +123,13 @@ footer {
 
 /*  **************************
         DISPLAY GRID  
-    ***********************
-*/
+    **************************/
 
 body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
         "head"
-        "main"
-        "main"
-        "main"
         "main"
         "foot";
         gap: 1em;
@@ -162,13 +155,14 @@ header article {        /* hero article */
     grid-row: 4 / 5;
 
     display: grid;
-    grid-template: 1fr 1em repeat(2, 1fr) 1em / 1em 1fr 1em;
+    grid-template: 1fr 1em repeat(2, 1fr) 1.1em / 1.25em 1fr 1.25em;
     grid-template-areas: 
         ". .... ."
         ". hrh2 ."
         ". hrh3 ."
         ". hrpf ."
         ". .... .";
+    gap: 0.5em 0;
 }
 
 article.hero h2 {
@@ -185,6 +179,10 @@ article.hero p {
 
 main {
     grid-area: main;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em;
 }
 
 footer {
