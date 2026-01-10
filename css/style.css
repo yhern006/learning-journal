@@ -130,23 +130,21 @@ footer {
 */
 
 body {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
         "head"
-        "head"
-        "hero"
         "main"
         "main"
         "main"
         "main"
         "foot";
-        gap: 1em; */
+        gap: 1em;
 }
 
 header {
     display: grid;
-    grid-template: repeat(3, 1em) auto / repeat(12, 1fr);
+    grid-template: repeat(3, 1em) auto / 1em repeat(10, 1fr) 1em;
 }
 
 header div {
