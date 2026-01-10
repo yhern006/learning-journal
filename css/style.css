@@ -159,17 +159,18 @@ header nav {
     grid-row: 2 / 3;
 }
 
-header article {
+header article {        /* hero article */
     grid-column: 1 / -1;
     grid-row: 4 / 5;
 
     display: grid;
-    grid-template: 1fr 1em repeat(2, 1fr) / 1em 1fr 1em;
+    grid-template: 1fr 1em repeat(2, 1fr) 1em / 1em 1fr 1em;
     grid-template-areas: 
         ". .... ."
         ". hrh2 ."
         ". hrh3 ."
-        ". hrpf .";
+        ". hrpf ."
+        ". .... .";
 }
 
 article.hero h2 {
