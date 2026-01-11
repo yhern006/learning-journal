@@ -213,4 +213,14 @@ h1 {
     gap: 2em;
 }
 
+@media (min-width: 870px) {
+    header {
+        grid-template-columns: 3.43em repeat(10, 1fr) 3.43em;
+    }
+
+    header article {  /* Hero part */
+        grid-template-columns: 3.43em 1fr 3.43em;
+    }
+}
+
 
