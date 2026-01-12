@@ -18,6 +18,10 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     color: white;
+
+    /* display: flex;
+    flex-direction: column;
+    padding: 12vw 1.25em 1em 1.25em; */
 }
 
 .hero p {
@@ -139,7 +143,7 @@ body {
 
 header {
     display: grid;
-    grid-template: repeat(3, 1em) auto / 1em repeat(10, 1fr) 1em;
+    grid-template: repeat(3, 1em) auto / 1.25em repeat(10, 1fr) 1.5em;
 }
 
 header div {
@@ -152,12 +156,12 @@ header nav {
     grid-row: 2 / 3;
 }
 
-header article {        /* hero article */
+header article {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
 
     display: grid;
-    grid-template: 1fr 1em repeat(2, 1fr) 1.1em / 1.25em 1fr 1.25em;
+    grid-template: 17vw 1em repeat(2, 1fr) 1.1em / 1.25em 1fr 1.25em;
     grid-template-areas:
         ". .... ."
         ". hrh2 ."
@@ -177,6 +181,7 @@ article.hero h3 {
 
 article.hero p {
     grid-area: hrpf;
+    max-width: 614px;
 }
 
 main {
@@ -210,17 +215,26 @@ h1 {
 
 .nav-menu ul{
     display: flex;
+    justify-content: end;
     gap: 2em;
 }
 
-@media (min-width: 870px) {
+/* @media (min-width: 870px) {
     header {
         grid-template-columns: 3.43em repeat(10, 1fr) 3.43em;
     }
 
     header article {  /* Hero part */
-        grid-template-columns: 3.43em 1fr 3.43em;
+        grid-template: repeat(3, 3.5em) 1em repeat(2, 1fr) 1.1em / 3.43em 1fr 3.43em;
+        grid-template-areas:
+            ". .... ."        
+            ". .... ."
+            ". .... ."
+            ". hrh2 ."
+            ". hrh3 ."
+            ". hrpf ."
+            ". .... .";
     }
-}
+} */
 
 
