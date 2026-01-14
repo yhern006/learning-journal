@@ -147,7 +147,8 @@ article.hero p {
         DISPLAY GRID
     **************************/
 header,
-main {
+main,
+.articles {
     display: grid;
 }
 
@@ -171,10 +172,15 @@ header nav {
     gap: 0.5em 0;
 }
 
-main {
+main,
+.articles {
     padding: 1.25em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.63em
+}
+
+.about-me-body main {
+    display: block;
 }
 
 /*  =================
