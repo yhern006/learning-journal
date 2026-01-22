@@ -76,6 +76,7 @@ aside {
     border-bottom: 1px solid #000;
     padding: 0;
     margin-bottom: 3.18em;
+    cursor: pointer;
 }
 
 #recent-posts {
@@ -120,6 +121,10 @@ article.hero p {
 
 }
 
+.about-me-section {
+    padding: 25px 1.25em 0 1.25em;
+}
+
 .about-me-section img{
     width: 182px;
     height: 182px;
@@ -145,6 +150,10 @@ article.hero p {
 .about-me-section h3 {
     font-size: 1em;
     font-weight: 700;
+}
+
+.about-me-post-intro p:last-child{
+    margin-bottom: 0;
 }
 
 .about-me-body aside h3 {
@@ -313,10 +322,6 @@ footer {
     .about-me-post-intro  {
         max-width: 844px;
         padding: 0 120px;
-    }
-
-    .about-me-post-intro p:last-child{
-        margin-bottom: 0;
     }
 }
 
